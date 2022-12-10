@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    overflow-x: auto;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+.wrapper{
+    margin: 0 2.5rem;
+}
+h1{
+    font-family:  'Kalam', cursive;
+    font-weight: 600;
+    background-color: rgb(28, 167, 10);
+    color: black;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    font-size: 3rem;
+}
+cite{
+    font-size: 1rem;
+    font-weight: bold;
+}
+h2{
+    background-color: rgb(19, 18, 18);
+    color: rgb(28, 167, 27);
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-top-left-radius:2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-bottom: .60rem;
+}
+p{
+    margin: 0;
+    padding: 0;
+    line-height: 2.0;
+}
+.space{
+    margin-bottom: 2rem;
+}
+#aud{
+    margin-bottom: 1.5rem;
+}
+.vid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+video{
+    width: 30%  !important;
+    height: 350px   !important;
+    object-fit: fill;
+    margin: 1.5rem 0;
+    border: 5px solid rgb(247, 32, 32);
+    border-radius: 10%;
+}
+ul{
+    margin: 0;
+}
+a:link{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(199, 31, 31);
+}
+a:visited{
+    color: rgb(77, 35, 5);
+    font-weight: normal;
+}
+a:hover{
+    color: rgb(45, 45, 248);
+}
+#two{
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 490px){
+    body{
+        width: 100%;
+        font-size: .8rem;
+      }
+      .wrapper{
+        margin: 0 1.5rem;
+      }
+    .vid{
+        flex-flow: column wrap;
+    }  
+    video{
+        width: 70%  !important;
+        height: 150px   !important;
+        object-fit: fill;
+        margin: 1.5rem 0;
+    }
+    h2{
+        justify-content: center;
+    }
+}
